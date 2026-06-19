@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A CLI tool to optimize photos and videos for Instagram with optional border/matting framing."
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Antigravity Code Assistant"}
 ]
@@ -20,3 +20,6 @@ dependencies = [
 
 [project.scripts]
 insta-optimizer = "insta_optimizer.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["insta_optimizer*"]
